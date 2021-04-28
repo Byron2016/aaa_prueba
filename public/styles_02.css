@@ -45,6 +45,32 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.principal {
+  text-align: center;
+}
+.principal .encabezado {
+  margin: 0 30px;
+  padding-bottom: 30px;
+}
+.principal h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 200;
+  color: var(--clr-VeryDarkBlue);
+}
+
+.principal h1 span {
+  display: block;
+  font-weight: 1000;
+}
+
+.principal princ_parr {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 100;
+  color: var(--clr-GrayishBlue)
+}
 
 /*  -----------*/
 
@@ -57,14 +83,20 @@
     /* background-color: var(--clr-VeryLightGray); */
 
     min-width: 375px;
-    padding: 0px;
+    padding: 5px;
     background-color: yellowgreen;
     margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
   
   }
 
   .principal {
      background-color: rgb(150, 237, 240);
+     margin-left: auto;
+     margin-right: auto;
+     padding: 0px;
   }
 
   /* .principal h1 {
