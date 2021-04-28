@@ -155,11 +155,7 @@ main section article:nth-child(4) {
   .sec_art {
     width: 10%;
   }
-  
-
 }
-
-
 
 @media(max-width: 800px){
   .principal {
@@ -185,7 +181,7 @@ main section article:nth-child(4) {
     font-size: 15px;
     /* background-color: var(--clr-VeryLightGray); */
 
-    /* min-width: 375px; */
+    min-width: 375px;
     padding: 0px;
     background-color: yellowgreen;
   
