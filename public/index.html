@@ -1,27 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-snowpack-app" />
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <title>Snowpack App</title>
-  </head>
-  <body>
-    <img id="img" src="/logo.svg" />
-    <canvas id="canvas"></canvas>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module" src="/dist/index.js"></script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./dist/images/fourcards/favicon-32x32.png" type="image/x-icon">
+  <title>FrontEndMentor 4 Cards</title>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet"> 
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <link rel="stylesheet" href="./styles_02.css">
+</head>
+<body class="body">
+  <main class="principal">
+    <h1>
+      Reliable, efficient delivery
+      <span>Powered by Technology</span>
+    </h1>
+    <p class="">
+      Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+    </p>
+    <section class="main_sec">
+      <article class="sec_art">
+        <div>
+          <h2 class="sec_art_titulo">Supervisor</h2>
+          <span>Monitors activity to identify project roadblocks</span>
+          
+          <img src="./dist/images/fourcards/icon-supervisor.svg" alt="" class="sec_art_img">
+        </div>
+      </article>
+      <article class="sec_art">
+        <div>
+          <h2 class="sec_art_titulo">Team</h2>
+          <span>Builder Scans our talent network to create the optimal team for your project</span>
+          
+          <img src="./dist/images/fourcards/icon-team-builder.svg" alt="" class="sec_art_img">
+        </div>
+      </article>
+      <article class="sec_art">
+        <div>
+          <h2 class="sec_art_titulo"> Karma</h2>
+          <span>Regularly evaluates our talent to ensure quality</span>
+          
+          <img src="./dist/images/fourcards/icon-karma.svg" alt="" class="sec_art_img">
+        </div>
+      </article>
+      <article class="sec_art">
+        <div>
+          <h2 class="sec_art_titulo">Calculator</h2>
+          <span>Uses data from past projects to provide better delivery estimates</span>
+          
+          <img src="./dist/images/fourcards/icon-calculator.svg" alt="" class="sec_art_img">
+        </div>
+      </article>
+    </section>
+    <div>Challenge by Frontend Mentor. Coded by Your Name Here.</div>
+    
+  </main>
+</body>
 </html>
