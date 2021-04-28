@@ -45,8 +45,16 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.body {
+  min-width: 100vh;
+}
 .principal {
   text-align: center;
+  background-color: rgb(150, 237, 240);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
 }
 .principal .encabezado {
   margin: 0 30px;
@@ -72,6 +80,28 @@
   color: var(--clr-GrayishBlue)
 }
 
+/* TARJETAS */
+.main_sec {
+  
+}
+
+.main_artic {
+  background-color: white;
+  position: relative;
+  max-width: 100%;
+  height: 250px;
+  border-top: 5px solid red;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0px 10px 20px rgba(var(--clr-GrayishBlue), .4);;
+
+}
+
+.main_sec img {
+  position: absolute;
+  right: 30px;;
+  bottom: 15px;
+}
 /*  -----------*/
 
 
@@ -81,6 +111,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     /* background-color: var(--clr-VeryLightGray); */
+    min-width: 100vh;
 
     min-width: 375px;
     padding: 5px;
@@ -93,26 +124,8 @@
   }
 
   .principal {
-     background-color: rgb(150, 237, 240);
-     margin-left: auto;
-     margin-right: auto;
-     padding: 0px;
+     
   }
-
-  /* .principal h1 {
-    margin-top: 0;
-    /* margin-bottom: 5px; */
-  } */
-
-  /* .principal p {
-    min-width: 375px;
-  }
-
-  .sec_art {
-  width: 100%;
-  margin: 0;
-  margin-bottom: 30px;
-  } */
 }
 
 
