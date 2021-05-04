@@ -55,6 +55,7 @@ img {
 
 .streamers {
   display: flex;
+  text-align: center;
 
   img {
     width: 2em;
@@ -111,18 +112,19 @@ img {
 
 .back {
   //display: none;
-  opacity: 1;
+  opacity: 0;
   position: absolute;
-  bottom: 0;
+  top: 55%;
+  //bottom: 0; //para que quede dentro el .back .stremers
   left: 0;
   right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1em;
+  gap: 1.5em;
   
   .streaming-info {
-    margin: 1em 0;
+    //margin: 1em 0;
     columns: 2;
     column-rule: 1px solid rgba(255, 255, 255, .25);
   }
@@ -140,7 +142,7 @@ img {
 }
 
 .background {
-  background: #234;
+  background: rgb(40, 46, 54);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -153,8 +155,10 @@ img {
 }
 
 .game:hover {
+  //background: pink;
   .rank {
-    transform: translate(150%, -74%);
+    transform: translate(150%, -61%);
+    //background: red;
   }
   .front {
     transform: translateY(-30%) scale(.8);
@@ -170,6 +174,24 @@ img {
 
   .back {
     opacity: 1;
+    //background: pink;
+
+    .streamers {
+      width: 100%;
+      justify-content: space-between;
+      //background: red;
+
+    }
+      x
+
+    .streamer {
+      font-size: .9rem;
+    }
+
+    .name {
+      font-weight: bold;
+
+    }
   }
 
   .background {
@@ -182,7 +204,7 @@ img {
 
       
     opacity: 1;
-    transform: scale(1.4, 1.2);
+    transform: scale(1.35, 1.3) translateY(5%);
   }
 }
 
