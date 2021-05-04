@@ -12,6 +12,7 @@
   --lcr-secondary: rgb(0,63,163);
 
   --br: .5em;
+  --transition: transform 200ms cubic-bezier(.21, 1.00, .81, 1.00);
 }
 
 body {
@@ -54,11 +55,13 @@ img {
   position: absolute;
   top: 0;
   right: 1em;
+  z-index: 1000;
   font-weight: bold;
   font-size: 1.123rem;
   background: rgba(0,0,0,.65);
   padding: .5em .5em .75em;
   clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0 100%, 0 0); //bennettfeely.com/clippy/
+  transition: var(--transition);
 
 }
 
@@ -113,6 +116,9 @@ img {
 }
 
 .game:hover {
+  .rank {
+    transform: translate(150%, -74%);
+  }
   .front {
     transform: translateY(-30%) scale(.8);
 
@@ -129,7 +135,7 @@ img {
     //   transform 250ms ease-in-out,
     //   opacity 100ms linear;
     transition: 
-      transform 200ms cubic-bezier(.21, 1.00, .81, 1.00),
+      var(--transition),
       opacity 100ms linear;
 
       
