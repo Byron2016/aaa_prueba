@@ -106,7 +106,29 @@ img {
 }
 
 .back {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.back .streaming-info {
+  margin: 1em 0;
+  -webkit-columns: 2;
+          columns: 2;
+  -webkit-column-rule: 1px solid rgba(255, 255, 255, 0.25);
+          column-rule: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.back .game-stat {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.back .game-stat span {
+  font-size: 0.85rem;
+  display: block;
 }
 
 .background {
@@ -140,6 +162,10 @@ img {
 
 .game:hover .front .stats {
   opacity: 0;
+}
+
+.game:hover .back {
+  opacity: 1;
 }
 
 .game:hover .background {

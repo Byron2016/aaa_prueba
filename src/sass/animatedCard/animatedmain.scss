@@ -68,7 +68,6 @@ img {
 .front {
   .thumbnail {
     transition: 250ms;
-
     border-radius: var(--br);
   }
   .name {
@@ -99,7 +98,29 @@ img {
 
 
 .back {
-  display: none;
+  //display: none;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  .streaming-info {
+    margin: 1em 0;
+    columns: 2;
+    column-rule: 1px solid rgba(255, 255, 255, .25);
+  }
+
+  .game-stat {
+    font-size: 1.125rem;
+    text-align: center;
+
+    span {
+      font-size: 0.85rem;
+      display: block;
+      //background: red;
+    }
+  }
 }
 
 .background {
@@ -130,6 +151,11 @@ img {
       opacity: 0;
     }
   }
+
+  .back {
+    opacity: 1;
+  }
+
   .background {
     // transition: 
     //   transform 250ms ease-in-out,
