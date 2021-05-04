@@ -65,6 +65,8 @@ img {
 }
 
 .front .thumbnail {
+  -webkit-transition: 250ms;
+  transition: 250ms;
   border-radius: var(--br);
 }
 
@@ -111,12 +113,24 @@ img {
   left: 0;
   right: 0;
   z-index: -1;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.2, 0.9);
+          transform: scale(0.2, 0.9);
+  opacity: 0;
+  border-radius: var(--br);
+}
+
+.game:hover .front {
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
 }
 
 .game:hover .background {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transition: opacity 100ms linear, -webkit-transform 250ms cubic-bezier(0.21, 1, 0.81, 1);
+  transition: opacity 100ms linear, -webkit-transform 250ms cubic-bezier(0.21, 1, 0.81, 1);
+  transition: transform 250ms cubic-bezier(0.21, 1, 0.81, 1), opacity 100ms linear;
+  transition: transform 250ms cubic-bezier(0.21, 1, 0.81, 1), opacity 100ms linear, -webkit-transform 250ms cubic-bezier(0.21, 1, 0.81, 1);
+  opacity: 1;
+  -webkit-transform: scale(1.4, 1.2);
+          transform: scale(1.4, 1.2);
 }
 /*# sourceMappingURL=animatedmain.css.map */

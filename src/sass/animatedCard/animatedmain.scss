@@ -64,6 +64,8 @@ img {
 
 .front {
   .thumbnail {
+    transition: 250ms;
+
     border-radius: var(--br);
   }
   .name {
@@ -105,12 +107,26 @@ img {
   left: 0;
   right: 0;
   z-index: -1;
-  transform: scale(.5);
+  transform: scale(.2, .9);
+  opacity: 0;
+  border-radius: var(--br);
 }
 
 .game:hover {
+  .front {
+    transform: translateY(-30%);
+  }
   .background {
-    transform: scale(1.5);
+    // transition: 
+    //   transform 250ms ease-in-out,
+    //   opacity 100ms linear;
+    transition: 
+      transform 250ms cubic-bezier(.21, 1.00, .81, 1.00),
+      opacity 100ms linear;
+
+      
+    opacity: 1;
+    transform: scale(1.4, 1.2);
   }
 }
 
