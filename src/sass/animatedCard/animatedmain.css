@@ -51,6 +51,11 @@ img {
   border-radius: 50%;
 }
 
+.rank {
+  position: absolute;
+  font-weight: bold;
+}
+
 .front .name {
   margin: 0.75em 0;
 }
