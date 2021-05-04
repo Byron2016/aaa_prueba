@@ -111,5 +111,12 @@ img {
   left: 0;
   right: 0;
   z-index: -1;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.game:hover .background {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 /*# sourceMappingURL=animatedmain.css.map */
