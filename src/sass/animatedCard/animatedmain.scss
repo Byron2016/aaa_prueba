@@ -9,7 +9,7 @@
   --clr-light: #fff;
   --clr-accent: rgb(222,53,0);
   --clr-accent-dark: rgb(163,28,0);
-  --lcr-secondary: rgb(0,63,163);
+  --clr-secondary: rgb(0,76,199);
 
   --br: .5em;
   --transition: transform 200ms cubic-bezier(.21, 1.00, .81, 1.00);
@@ -32,6 +32,17 @@ p {
   margin: 0;
 }
 
+.btn {
+  cursor: pointer;
+  border: 0;
+  background: var(--clr-secondary);
+  border-radius: var(--br);
+  color: var(--clr-light);
+  font-weight: bold;
+  padding: .5em 1.5em;
+
+}
+
 img {
   max-width: 100%;
 }
@@ -39,6 +50,7 @@ img {
 .game {
   position: relative;
   width: 12.5em;
+  cursor: pointer;
 }
 
 .streamers {
