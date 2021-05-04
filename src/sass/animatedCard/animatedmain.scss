@@ -116,6 +116,10 @@ img {
   .front {
     transform: translateY(-30%) scale(.8);
 
+    .name {
+      animation: gameName 250ms forwards;
+    }
+
     .stats {
       opacity: 0;
     }
@@ -131,6 +135,42 @@ img {
       
     opacity: 1;
     transform: scale(1.4, 1.2);
+  }
+}
+
+@keyframes gameName {
+  0% {
+    text-align: left;
+    opacity: 1;
+  }
+
+  20% {
+    text-align: left;
+    opacity: 0;
+  }
+
+  50% {
+    text-align: center;
+    opacity: 0;
+    transform: scale(1.2);
+  }
+
+  60% {
+    text-align: center;
+    opacity: .5;
+    transform: scale(1.2);
+  }
+
+  70% {
+    text-align: center;
+    opacity: .7;
+    transform: scale(1.2);
+  }
+
+  100% {
+    text-align: center;
+    opacity: 1;
+    transform: scale(1.2);
   }
 }
 
