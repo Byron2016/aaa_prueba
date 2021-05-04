@@ -5,7 +5,8 @@
     "test": "echo \"This template does not include a test runner by default.\" && exit 1",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "prettier --check \"src/**/*.js\"",
-    "copiarArchivos": "copyfiles -E -u 3 ./src/sass/socialproofsection/main.css ./src/sass/animatedCard/animatedmain.css ./public/css/"
+    "copiarCss": "copyfiles -E -u 3 ./src/sass/socialproofsection/main.css ./src/sass/animatedCard/animatedmain.css ./src/img/animatedCard/animatedmain.css ./public/css/",
+    "copiarImg": "copyfiles -E -u 1 ./src/img/animatedCard/**.jpg ./public/"
   },
   "dependencies": {
     "canvas-confetti": "^1.2.0",
